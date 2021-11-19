@@ -5,8 +5,11 @@ const app = express();
 
 //send the index.html when receiving HTTP GET /
 app.use(express.static('public'));
+
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: __dirname });
+    res.render('index');
 });
 
 
