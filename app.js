@@ -12,10 +12,6 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-//route for catalogue
-app.get('/catalogue', (req, res) => {
-    res.render('catalogue');
-});
 
 //route for contacts
 app.get('/contacts', (req, res) => {
