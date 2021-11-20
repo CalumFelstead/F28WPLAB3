@@ -1,0 +1,19 @@
+<%- include('header'); -%>
+
+<div class='content'>
+    <H1 ID="welcome">WELCOME to Webstore</H1>
+
+
+    <form action="/api/login" method="get">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="pword">Password:</label>
+        <input type="text" id="pword" name="pword"><br><br>
+
+        <input type="submit" value="Submit"><br><br>
+    </form>
+</div>
+
+<%- include('footer'); -%>

@@ -13,6 +13,21 @@ app.get('/', (req, res) => {
 });
 
 
+//route for contacts
+app.get('/contacts', (req, res) => {
+    res.render('contacts');
+});
+
+//route for register
+app.get('/register', (req, res) => {
+    res.render('register');
+});
+
+//route for register
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
 
 //make the app listen on port
 const port = process.argv[2] || process.env.PORT || 3000;
