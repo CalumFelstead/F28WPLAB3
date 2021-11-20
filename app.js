@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+//route for catalogue
+app.get('/catalogue', (req, res) => {
+    res.render('catalogue');
+});
 
 //route for contacts
 app.get('/contacts', (req, res) => {
@@ -23,10 +27,15 @@ app.get('/register', (req, res) => {
     res.render('register');
 });
 
-//route for register
+//route for login
 app.get('/login', (req, res) => {
     res.render('login');
 });
+
+
+//pass requests to the router middleware
+const router = require('./routes/apis');
+app.use(router);
 
 
 //make the app listen on port
